@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +7,9 @@
 }
 
 body {
-    background-color: #b3b3b3;
-    font-family: sans-serif ;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #000114;
+    color: #fff;
 }
 
 h1 {
@@ -15,14 +18,22 @@ h1 {
 }
 
 .caixa {
-    width: 420px;
-    background-color: #ffffff;
+    background: transparent;
     margin: auto;
     margin-top: 100px;
-    backdrop-filter: blur(20px);
-    border: 3px solid #929292;
-    border-radius: 15px;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 30px;
+    border: 3px solid #00B4FF;
+    box-shadow:
+        0 0 10px #00B4FF,
+        0 0 25px rgba(0, 180, 255, 0.6),
+        inset 0 0 15px rgba(0, 180, 255, 0.3);
+
+    backdrop-filter: blur(4px);
     padding: 0 10px 30px 10px;
+    overflow-y: auto;
 }
 
 .titulo {
@@ -37,17 +48,17 @@ h1 {
 
 .dig-tarefa {
     background-color: transparent;
-    color: #000;
+    color: #ffffff;
     padding: 5px 10px;
     outline: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #00B4FF;
 }
 
 .botao {
     width: 25px;
-    background-color: #000;
-    color: #fff;
+    background-color:  #00B4FF;
+    color: #000000;
     padding: 5px 8px;
     border: none;
     margin-left: 10px;
@@ -55,8 +66,15 @@ h1 {
 }
 
 .botao:hover {
-    background-color: #242424;
+    background-color:  rgba(0, 180, 255, 0.6);
     transition: 0.5s;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 li {
@@ -64,11 +82,19 @@ li {
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
-    
-    width: 100%;
-    border-radius: 10px;
     padding: 10px 10px 10px 20px;
-    box-shadow: 0px 2px 2px 2px #242424;
+
+    width: 400px;
+    border: 1px solid #00B4FF;
+    border-radius: 8px;
+    box-shadow:
+        0 0 5px #00B4FF,
+        0 0 20px rgba(0, 180, 255, 0.6),
+        inset 0 0 15px rgba(0, 180, 255, 0.3);
+}
+
+.checkbox {
+    cursor: pointer;
 }
 
 span {
