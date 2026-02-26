@@ -84,7 +84,8 @@ li {
     margin-top: 30px;
     padding: 10px 10px 10px 20px;
 
-    width: 400px;
+    width: 100%;
+    max-width: 350px;
     border: 1px solid #00B4FF;
     border-radius: 8px;
     box-shadow:
