@@ -57,3 +57,9 @@ function deletarTarefa(id) {
     tarefas.forEach(tarefa => criarTarefaNaTela(tarefa))
 
 }
+
+document.querySelector("#dig-tarefa").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        adicionarTarefa()
+    }
+})
