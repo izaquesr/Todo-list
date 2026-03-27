@@ -5,9 +5,14 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     font-family: sans-serif;
     background-image: url("./img/6e16db2add718165828197650335205b.jpg");
     background-size: cover;
+    background-position: center;
     color: #fff;
 }
 
@@ -18,29 +23,36 @@ h1 {
 
 .caixa {
     background: #ffffff48;
-    margin: auto;
-    width: 40vw;
-    height:90vh;
-    margin-top: 30px;
+    margin: 30px auto;
+
+    width: 90%;
+    max-width: 500px;
+
+    height: auto;
+    max-height: 90vh;
+
     border: 3px solid #8f8f8f;
     border-radius: 20px;
     backdrop-filter: blur(2px);
-    padding: 0 10px 30px 10px;
+
+    padding: 10px 10px 30px 10px;
+
     overflow-y: auto;
+
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
-  border-radius: 10px;
+    background: #ffffff;
+    border-radius: 10px;
 }
 
 .titulo {
@@ -69,7 +81,7 @@ h1 {
 
 .botao {
     width: 25px;
-    background-color:  #000000;
+    background-color: #000000;
     color: #ffffff;
     padding: 5px 8px;
     border: none;
@@ -79,7 +91,7 @@ h1 {
 }
 
 .botao:hover {
-    background-color:  rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     transition: 0.5s;
 }
 
