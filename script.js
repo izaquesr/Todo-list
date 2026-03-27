@@ -1,12 +1,13 @@
 const tarefas = []
+const tarefasFeitas = []
 
 function criarTarefaNaTela(tarefa) {
     let li = document.createElement("li")
 
     li.innerHTML = `
-        <input type="checkbox" class="checkbox" ${tarefa.concluida ? "checked" : ""}>
+        <input type="checkbox" class="checkbox">
         ${tarefa.texto}
-        <span>✕</span>
+        <span>✖</span>
     `
 
     li.querySelector("span").addEventListener("click", () => {
@@ -44,6 +45,10 @@ function adicionarTarefa() {
     document.querySelector('input').value = ""
 }
 
+function concluirTarefa() {
+    
+}
+
 function deletarTarefa(id) {
     const index = tarefas.findIndex(tarefa => tarefa.id === id)
 
@@ -58,7 +63,7 @@ function deletarTarefa(id) {
 
 }
 
-document.querySelector("#dig-tarefa").addEventListener("keydown", function(event) {
+document.querySelector("#dig-tarefa").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         adicionarTarefa()
     }
